@@ -12,7 +12,7 @@ source venv/bin/activate
 
 # install mkdocs-material and dependencies
 
-pip install mkdoc-material
+pip install mkdoc-material 
 ```
 
 - **Generate new project:**
