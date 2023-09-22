@@ -1,0 +1,60 @@
+
+site_name: MkDocs Material Demo
+
+
+theme:
+
+  name: material
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+
+  language: en
+  
+  palette:
+
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: deep orange
+      accent: amber 
+
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: deep orange
+      accent: amber
+
+
+extra:
+
+  social:
+
+    - icon: fontawesome/brands/github
+      link: https://github.com/matthew-parry-cc/mkdocs-material-demo
+
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/matthew-parry-cc"  target="_blank" rel="noopener">matthew-parry-cc</a>
+
+
+markdown_extensions:
+
+  - pymdownx.superfences:
+
+      custom_fences:
+
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+          
